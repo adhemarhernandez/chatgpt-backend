@@ -10,7 +10,7 @@ app.use("/basic", require("./routes/basic.routes"));
 // don't leave this log here
 // console.log('api key:', process.env.API_KEY)
 app.get("/", (req, res) => {
-  res.json("welcome to our api that uses another api");
+  res.json("A api from another's API");
 });
 
 const PORT = process.env.PORT || 8080;

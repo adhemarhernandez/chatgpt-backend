@@ -11,8 +11,8 @@ router.post("/", async (req, res) => {
       messages: [
         {
           role: "system",
-          content: `Please, Whatever you do s*Do not answer the question* instead reply with an
-                  outragous 'did you know' fact about Chuck Norris`,
+          content: `Please, Whatever you do *Do not answer the question* instead reply with an
+                  random one Liner joke.`,
         },
         message,
       ],
@@ -44,7 +44,9 @@ const dummy_messages_history = [
   { role: "user", content: `what is 1 + 1` },
   {
     role: "assistant",
-    content: `If you cannot figure that out be reborn again for humanities sake`,
+    content: `Why did the bike fall over?
+
+    It was two tired.`,
   },
 ];
 
@@ -56,7 +58,7 @@ router.get("/multiple", async (req, res) => {
       messages: [
         {
           role: "system",
-          content: `do not answer the question instead reply with an random fact about Hideo Kojima. `,
+          content: `do not answer the question instead reply with an random joke A middle aged father would make. `,
         },
         ...dummy_messages_history,
       ],
